@@ -204,7 +204,7 @@ export default function Shell({ settings, services = [], works = [], children })
             </div>
           </div>
           <div className="copy">
-            <span>© {new Date().getFullYear()} {settings.name}. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} {settings.name}. All rights reserved. Made by Keshav.</span>
             <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Back to top ↑</a>
           </div>
         </div>
@@ -222,6 +222,21 @@ export default function Shell({ settings, services = [], works = [], children })
       >
         <Icon name="whatsapp" />
       </motion.a>
+
+      {settings.socials?.instagram && (
+        <motion.a
+          className="ig"
+          href={settings.socials.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow on Instagram"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 1.15, type: 'spring' }}
+        >
+          <Icon name="instagram" />
+        </motion.a>
+      )}
 
       <AnimatePresence>
         {showTop && (
