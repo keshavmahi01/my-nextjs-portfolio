@@ -234,7 +234,7 @@ export default function Shell({ settings, services = [], works = [], children })
           animate={{ scale: 1 }}
           transition={{ delay: 1.15, type: 'spring' }}
         >
-          <Icon name="instagram" />
+          <Icon name="instagram-filled" />
         </motion.a>
       )}
 
