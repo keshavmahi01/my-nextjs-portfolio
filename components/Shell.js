@@ -225,7 +225,7 @@ export default function Shell({ settings, services = [], works = [], children })
 
       {settings.socials?.instagram && (
         <motion.a
-          className="ig"
+          className="ig-float"
           href={settings.socials.instagram}
           target="_blank"
           rel="noopener noreferrer"
